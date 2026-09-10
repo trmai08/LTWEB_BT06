@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f7;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 65px;
+    background: #1599e8;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.logout {
+    background: #f44336;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 18px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 65px;
+    left: 0;
+    bottom: 0;
+
+    width: 260px;
+
+    background: #1599e8;
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+    background: white;
+
+    border-radius: 50%;
+}
+
+.profile p {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+
+    padding: 16px 20px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    background: #087fc5;
+}
+
+.menu-dashboard {
+    background: #f44336;
+}
+
+.menu-category {
+    background: #111;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    padding-left: 40px;
+    background: #1599e8;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    margin-left: 260px;
+    padding: 100px 35px 40px;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+
+    min-height: 600px;
+}
+
+.page-title {
+    margin: 0;
+
+    color: #f44336;
+    font-size: 30px;
+}
+
+.page-description {
+    color: #777;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+/* ================= PANEL ================= */
+
+.panel {
+    border: 1px solid #ddd;
+}
+
+.panel-title {
+    padding: 15px 20px;
+
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+
+    font-size: 17px;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-add {
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    background: #1599e8;
+    color: white;
+
+    text-decoration: none;
+}
+
+.btn-add:hover {
+    background: #087fc5;
+}
+
+.action-link {
+    color: #1599e8;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+/* ================= SEARCH ================= */
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.search input {
+    padding: 8px 10px;
+
+    border: 1px solid #ccc;
+}
+
+/* ================= TABLE ================= */
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-table th,
+.category-table td {
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    vertical-align: middle;
+}
+
+.category-table th {
+    background: #fafafa;
+    text-align: left;
+}
+
+.category-table img {
+    width: 150px;
+    height: 130px;
+
+    object-fit: contain;
+
+    display: block;
+    margin: auto;
+}
+
+/* ================= FORM ================= */
+
+.form-title {
+    font-size: 28px;
+    font-weight: normal;
+
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-size: 15px;
+}
+
+.form-image {
+    width: 130px;
+    height: 130px;
+
+    object-fit: contain;
+
+    margin: 10px 0;
+}
+
+.status-row {
+    margin-top: 8px;
+}
+
+.status-row label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.btn {
+    padding: 10px 17px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: #1599e8;
+    color: white;
+
+    border-color: #1599e8;
+}
+
+.btn-default {
+    background: white;
+    color: #333;
+}
